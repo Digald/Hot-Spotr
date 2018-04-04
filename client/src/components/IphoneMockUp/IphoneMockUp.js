@@ -1,4 +1,5 @@
 import React from 'react';
+import './IphoneMockUp.css';
 import iphoneblack from './images/iphone-black.png';
 
 const IphoneMockUp = (props) => (

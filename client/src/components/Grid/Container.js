@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Container = (props) => (
+export const Container = (props) => (
     <div className={`container ${props.size}`}>
         {props.children}
     </div>
 );
-
-export default Container;

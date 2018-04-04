@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Column = (props) => (
+export const Column = (props) => (
     <div className={`column ${props.size}`}>
         {props.children}
     </div>
 );
-
-export default Column;

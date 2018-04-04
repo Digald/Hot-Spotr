@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Columns = (props) => (
-    <div className={`columns ${props.responsive}`}>
+export const Columns = (props) => (
+    <div className={`columns banner ${props.style}`}>
         {props.children}
     </div>
 );
-
-export default Columns;
