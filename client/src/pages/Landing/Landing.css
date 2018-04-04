@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-position: fixed;
   overflow: hidden;
+  color: white;
 }
 
 body:before {
@@ -23,6 +24,6 @@ body:before {
   filter: blur(5px);
 }
 
-.banner {
-    top: calc(15%);
+.wrapper {
+  margin-top: 15%;
 }
