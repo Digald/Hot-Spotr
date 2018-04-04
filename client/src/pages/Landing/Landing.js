@@ -1,20 +1,11 @@
 import React, {Component} from 'react';
+// import Logo from '../../components/Logo';
 
 class Landing extends Component {
     render() {
         return (
-            <section className="hero">
-            <div className="hero-body">
-              <div className="container">
-                <h1 className="title">
-                  Hero title
-                </h1>
-                <h2 className="subtitle">
-                  Hero subtitle
-                </h2>
-              </div>
+            <div>Hello World
             </div>
-          </section>
         )
     }
 }
