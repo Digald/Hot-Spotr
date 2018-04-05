@@ -24,8 +24,8 @@ body:before {
   filter: blur(5px);
 }
 
-.wrapper {
-  margin-top: 15%;
+.wrapper { 
+  margin-top: 10%;
 }
 
 .title {
@@ -34,4 +34,7 @@ body:before {
 }
 .sub-title {
   font-size: 2vw;
+}
+.phone {
+  text-align: center;
 }
