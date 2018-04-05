@@ -18,8 +18,8 @@ class Landing extends Component {
                   <Logo />
                 </Column>
                 <Column>
-                  <h1>Buisnes App</h1>
-                  <p>So that you don't have too.</p>
+                  <h1 className="title">Buisnes App</h1>
+                  <p className="sub-title">So that you don't have too.</p>
                   <Columns>
                     <Column>
                       <GenericBtn>Sign Up</GenericBtn>

@@ -27,3 +27,11 @@ body:before {
 .wrapper {
   margin-top: 15%;
 }
+
+.title {
+  font-size: 4vw;
+  color: white;
+}
+.sub-title {
+  font-size: 2vw;
+}
