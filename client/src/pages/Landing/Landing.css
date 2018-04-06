@@ -25,16 +25,57 @@ body:before {
 }
 
 .wrapper { 
-  margin-top: 10%;
+  margin-top: 10vh;
 }
 
-.title {
+.text-section {
+  margin-top: 15vh;
+}
+.inline-logo {
+  display: none;
+}
+.main-title {
   font-size: 4vw;
   color: white;
 }
 .sub-title {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .phone {
-  text-align: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 6vw;
+  }
+  .sub-title {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .inline-logo {
+    display: inline;
+  }
+  .main-title {
+    display: inline;
+    font-size: 13vw;
+  }
+  .sub-title {
+    font-size: 6vw;
+  }
+  .logo-col {
+    display: none;
+  }
+  .blank-col {
+    display: none;
+  }
+  .mobile-text {
+    text-align: center;
+  }
+  .phone {
+    display: none;
+    text-align: center;
+  }
 }
