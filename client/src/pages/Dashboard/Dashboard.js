@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Sidebar from '../../components/Sidebar';
 import './Dashboard.css';
 
 class Dashboard extends Component {
     render() {
       return (
-        <div>Hello World</div>
+        <Sidebar/>
       );
     }
   }
