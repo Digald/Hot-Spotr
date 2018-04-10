@@ -12,7 +12,7 @@ const Sidebar = props => (
     <div className="menu-space">
       <a className="sidebar-link">
         <span className="icon has-text-success">
-          <i class="fas fa-building" />
+          <i className="fas fa-building" />
         </span> TARGET INDUSTRY
       </a>
       <a className="sidebar-link">
