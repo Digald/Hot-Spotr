@@ -21,6 +21,11 @@ class Googlemaps extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         />
+        <AnyReactComponent
+          lat={30.2672}
+          lng={-97.7431}
+          text={"Austin Texas"}
+        />
       </div>
     );
   }

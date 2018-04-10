@@ -9,7 +9,10 @@ class Dashboard extends Component {
       <div className="dashboard-cont">
         <Sidebar />
         <div className="user-view">
+          <h1 className="section-header">Profile Completeness</h1>
+          <h1 className="section-header">Geographical Outlook</h1>
           <Googlemaps />
+          <h1 className="section-header">Statistical Outlook</h1>
         </div>
       </div>
     );
