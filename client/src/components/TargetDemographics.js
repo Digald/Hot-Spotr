@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Input from './Input';
 
 class TargetDemographics extends React.Component {
     static propTypes = {
@@ -8,7 +9,8 @@ class TargetDemographics extends React.Component {
     render() {
         return(
             <div>
-                <input type='text' name='industry' value={this.props.industry} />
+                <p>What is your target demographic?</p>
+                <Input />
             </div>
         )
     }
