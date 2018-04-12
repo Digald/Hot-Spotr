@@ -12,7 +12,7 @@ class Dashboard extends Component {
           <h1 className="section-header">Profile Completeness</h1>
           <h1 className="section-header">Geographical Outlook</h1>
           <Googlemaps />
-          <h1 className="section-header">Statistical Outlook</h1>
+          <br /><h1 className="section-header">Statistical Outlook</h1>
         </div>
       </div>
     );
