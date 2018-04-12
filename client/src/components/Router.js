@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
-import Landing from './pages/Landing';
-import Dashboard from './pages/Dashboard';
+import Landing from '../pages/Landing';
+import Dashboard from '../pages/Dashboard';
 
 const Router = () => (
     <BrowserRouter>

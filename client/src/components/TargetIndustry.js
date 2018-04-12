@@ -8,6 +8,7 @@ class TargetIndustry extends React.Component {
     render() {
         return (
             <div>
+                <p>Enter Target Industry</p>
                 <input type='text' name='industry' value={this.props.industry} />
             </div>
         )
