@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import index from '../reducers/index';
 
 import * as actions from '../actions/actionCreator.js';
 import TargetIndustryForm from './TargetIndustryForm.js';
