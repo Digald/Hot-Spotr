@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Sidebar from "../../components/Sidebar";
 import "./Dashboard.css";
 import Googlemaps from "../../components/Googlemaps";
-import TargetIndustry from '../../components/TargetIndustry';
-import TargetLocation from '../../components/TargetLocation';
-import TargetDemographics from '../../components/TargetDemographics';
+import TargetIndustryForm from '../../components/TargetIndustryForm';
+import TargetLocationForm from '../../components/TargetLocationForm';
+import TargetDemographicsForm from '../../components/TargetDemographicsForm';
 
 class Dashboard extends Component {
   render() {
@@ -16,9 +16,9 @@ class Dashboard extends Component {
           <h1 className="section-header">Geographical Outlook</h1>
           <Googlemaps />
           <br /><h1 className="section-header">Statistical Outlook</h1>
-          <TargetIndustry />
-          <TargetLocation />
-          <TargetDemographics />
+          <TargetIndustryForm />
+          <TargetLocationForm />
+          <TargetDemographicsForm />
         </div>
       </div>
     );
