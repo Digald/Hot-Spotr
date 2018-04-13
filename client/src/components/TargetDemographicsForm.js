@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import ModalWrapper from './ModalWrapper';
 
 const TargetDemographicsForm = props => {
-    const signIn = provider => {
+    const targetDemographicsForm = demographic => {
         props.hideModal();
-        props.signIn(provider);
+        props.targetDemographicsForm(demographic);
     };
 
     return (

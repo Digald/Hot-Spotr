@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
+import * as actions from '../actions/actionCreators.js';
 import TargetIndustryForm from './TargetIndustryForm.js';
 import TargetLocationForm from './TargetLocationForm';
 import TargetDemographicsForm from './TargetDemographicsForm';
@@ -20,4 +22,4 @@ const ModalConductor = props => {
     }
 };
 
-export default ModalConductor;
+export default connect(state => state, () => actions)(ModalConductor);
