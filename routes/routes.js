@@ -1,8 +1,7 @@
 module.exports = function(app, passport) {
-
   // PROFILE SECTION =========================
   app.get("/mydash", isLoggedIn, function(req, res) {
-    res.render("profile.ejs", {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"), {
       user: req.user
     });
   });
@@ -16,8 +15,6 @@ module.exports = function(app, passport) {
   // =============================================================================
   // AUTHENTICATE (FIRST LOGIN) ==================================================
   // =============================================================================
-
-  // locally --------------------------------
   // LOGIN ===============================
   // show the login form
   app.get("/login", function(req, res) {
@@ -28,8 +25,8 @@ module.exports = function(app, passport) {
   app.post(
     "/login",
     passport.authenticate("local-login", {
-      successRedirect: "/profile", // redirect to the secure profile section
-      failureRedirect: "/login", // redirect back to the signup page if there is an error
+      successRedirect: "/mydash", // redirect to the secure profile section
+      failureRedirect: "/", // redirect back to the signup page if there is an error
       failureFlash: true // allow flash messages
     })
   );
@@ -44,11 +41,12 @@ module.exports = function(app, passport) {
   app.post(
     "/signup",
     passport.authenticate("local-signup", {
-      successRedirect: "/", // redirect to the secure profile section
+      successRedirect: "/mydash", // redirect to the secure profile section
       failureRedirect: "/", // redirect back to the signup page if there is an error
       failureFlash: true // allow flash messages
     })
   );
+
 };
 // route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {

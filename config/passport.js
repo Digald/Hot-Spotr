@@ -1,7 +1,8 @@
 // load all the things we need
 const LocalStrategy = require("passport-local").Strategy;
 const User = require("../models").User;
-module.exports = function(passport) {
+const db = require('../models');
+module.exports = function(passport, user) {
   // =========================================================================
   // passport session setup ==================================================
   // =========================================================================
@@ -37,6 +38,10 @@ module.exports = function(passport) {
         passReqToCallback: true // allows us to pass in the req from our route (lets us check if a user is logged in or not)
       },
       function(req, email, password, done) {
+        console.log()
+        console.log(email);
+        console.log(password);
+        console.log(req);
         User.findOne({ where: { localemail: email } })
           .then(function(user) {
             if (!user) {

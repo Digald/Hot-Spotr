@@ -16,7 +16,7 @@ const session = require('express-session');
 const db = require("./models");
 
 // pass passport for configuration
-require('./config/passport')(passport);
+require('./config/passport')(passport, db.user);
 
 // Serve up static assets
 app.use(express.static("client/build"));
