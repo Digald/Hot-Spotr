@@ -1,6 +1,8 @@
-import { createStore } from 'redux';
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+
 import profile from './profile';
 
-const store = createStore(profile);
+const rootReducer = combineReducers({ profile, routing: routerReducer });
 
-export default store;
+export default rootReducer;
