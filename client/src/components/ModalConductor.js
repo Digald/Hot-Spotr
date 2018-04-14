@@ -24,4 +24,4 @@ const ModalConductor = props => {
     }
 };
 
-export default connect(state => state, () => actions)(ModalConductor(store));
+export default connect(state => state, () => actions)(ModalConductor);

@@ -7,7 +7,6 @@ body {
 }
 
 /* Start landing page style */
-
 .landing-cont {
     background-image: url("../css/images/background.jpg");
     background-size: cover;
@@ -95,15 +94,12 @@ body {
         text-align: center;
     }
 }
-
 /* End landing page style */
 
 /* Start dashboard style */
-
 .user-view {
     margin-left: 250px;
 }
-
 /* End dashboard style */
 
 .sidebar {
@@ -123,12 +119,10 @@ body {
     height: 15vh;
     border-bottom: 1px solid black;
 }
-
 .welcome-message {
     display: table-cell;
     vertical-align: middle;
 }
-
 .menu-space {
     padding: 20px 0;
     height: 100%;
@@ -142,20 +136,16 @@ body {
     padding: 10px 20px;
     color: inherit;
 }
-
 .sidebar-link:hover {
     background-color: lightgray;
     color: inherit;
 }
-
-.fa-users,
-.fa-building {
+.fa-users, .fa-building {
     color: black;
     font-size: 25px;
 }
 
 /* Start sidebar style */
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -203,20 +193,16 @@ body {
     color: black;
     font-size: 25px;
 }
-
 /* End sidebar style */
 
 /* Start iPhone mockup style */
-
 .iphone {
     max-height: 90vh;
     width: auto;
 }
-
 /* End iPhone mockup style */
 
 /* Start Logo style */
-
 .logo-image {
     width: 8vw;
     border-radius: 25px;
@@ -239,5 +225,4 @@ body {
         width: 13vw;
     }
 }
-
 /* End Logo style */
