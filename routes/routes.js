@@ -1,7 +1,8 @@
+const path = require("path");
 module.exports = function(app, passport) {
   // PROFILE SECTION =========================
   app.get("/mydash", isLoggedIn, function(req, res) {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"), {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"), {
       user: req.user
     });
   });
@@ -46,7 +47,6 @@ module.exports = function(app, passport) {
       failureFlash: true // allow flash messages
     })
   );
-
 };
 // route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {

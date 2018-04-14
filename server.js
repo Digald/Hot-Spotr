@@ -16,7 +16,7 @@ const session = require('express-session');
 const db = require("./models");
 
 // pass passport for configuration
-require('./config/passport')(passport, db.user);
+require('./config/passport')(passport, db.User);
 
 // Serve up static assets
 app.use(express.static("client/build"));
@@ -41,7 +41,7 @@ app.use("*", function(req, res) {
 });
 
 // Run server and sync database
-db.sequelize.sync({ force: false }).then(function() {
+db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
     console.log(`🌎 ==> Server now on port ${PORT}!`);
   });

@@ -1,8 +1,9 @@
 // load all the things we need
 const LocalStrategy = require("passport-local").Strategy;
-const User = require("../models").User;
+const bcrypt = require('bcrypt-nodejs');
 const db = require('../models');
 module.exports = function(passport, user) {
+  const User = user;
   // =========================================================================
   // passport session setup ==================================================
   // =========================================================================
@@ -38,21 +39,22 @@ module.exports = function(passport, user) {
         passReqToCallback: true // allows us to pass in the req from our route (lets us check if a user is logged in or not)
       },
       function(req, email, password, done) {
-        console.log()
         console.log(email);
         console.log(password);
-        console.log(req);
         User.findOne({ where: { localemail: email } })
           .then(function(user) {
             if (!user) {
+              console.log("no user");
               done(null, false, req.flash("loginMessage", "Unknown user"));
-            } else if (!user.validPassword(password)) {
+            } else if (!bcrypt.compareSync(password, user.localpassword)) {
+              console.log("wrong password");
               done(null, false, req.flash("loginMessage", "Wrong password"));
             } else {
               done(null, user);
             }
           })
           .catch(function(e) {
+            console.log(e);
             done(
               null,
               false,
@@ -75,6 +77,8 @@ module.exports = function(passport, user) {
         passReqToCallback: true // allows us to pass in the req from our route (lets us check if a user is logged in or not)
       },
       function(req, email, password, done) {
+        console.log(email);
+        console.log(password);
         //  Whether we're signing up or connecting an account, we'll need
         //  to know if the email address is in use.
 
@@ -90,6 +94,7 @@ module.exports = function(passport, user) {
 
             //  If we're logged in, we're connecting a new local account.
             if (req.user) {
+              console.log("second if hit")
               var user = req.user;
               user.localemail = email;
               user.localpassword = User.generateHash(password);
@@ -102,15 +107,18 @@ module.exports = function(passport, user) {
                   done(null, user);
                 });
             } else {
+              console.log("else hit")
               //  We're not logged in, so we're creating a brand new user.
               // create the user
               var newUser = User.build({
                 localemail: email,
-                localpassword: User.generateHash(password)
+                localpassword: bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
               });
+              console.log(newUser);
               newUser
                 .save()
-                .then(function() {
+                .then(function(result) {
+                  console.log(result)
                   done(null, newUser);
                 })
                 .catch(function(err) {
@@ -119,6 +127,7 @@ module.exports = function(passport, user) {
             }
           })
           .catch(function(e) {
+            console.log(e);
             done(
               null,
               false,
