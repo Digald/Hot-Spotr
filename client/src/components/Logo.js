@@ -1,6 +1,5 @@
 import React from 'react';
-import './Logo.css';
-import moon from './images/moonlogo.png';
+import moon from '../css/images/moonlogo.png';
 
 const Logo= (props) => (
     <img className={`logo-image ${props.unique}`} src={moon} alt="placeholder"/>

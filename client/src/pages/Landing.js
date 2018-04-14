@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Columns, Column } from "../components/Grid";
-import IphoneMockUp from "../components/IphoneMockUp";
-import Logo from "../components/Logo";
-import GenericBtn from "../components/Buttons";
+import IphoneMockUp from "../components/IphoneMockUp.js";
+import Logo from "../components/Logo.js";
+import GenericBtn from "../components/GenericBtn.js";
 
 class Landing extends React.Component {
   render() {
