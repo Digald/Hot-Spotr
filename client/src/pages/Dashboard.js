@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import Sidebar from "../../components/Sidebar";
-import "./Dashboard.css";
-import Googlemaps from "../../components/Googlemaps";
-import TargetIndustryForm from '../../components/TargetIndustryForm';
-import TargetLocationForm from '../../components/TargetLocationForm';
-import TargetDemographicsForm from '../../components/TargetDemographicsForm';
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import Googlemaps from "../components/Googlemaps";
+import TargetIndustryForm from '../components/TargetIndustryForm';
+import TargetLocationForm from '../components/TargetLocationForm';
+import TargetDemographicsForm from '../components/TargetDemographicsForm';
 
-class Dashboard extends Component {
+class Dashboard extends React.Component {
   render() {
     return (
       <div className="dashboard-cont">

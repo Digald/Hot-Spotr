@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import "./Landing.css";
-import { Container, Columns, Column } from "../../components/Grid";
-import IphoneMockUp from "../../components/IphoneMockUp";
-import Logo from "../../components/Logo";
-import GenericBtn from "../../components/Buttons";
+import React from "react";
+import { Container, Columns, Column } from "../components/Grid";
+import IphoneMockUp from "../components/IphoneMockUp";
+import Logo from "../components/Logo";
+import GenericBtn from "../components/Buttons";
 
-class Landing extends Component {
+class Landing extends React.Component {
   render() {
     return (
       <div className="landing-cont">
