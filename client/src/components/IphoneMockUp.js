@@ -1,8 +1,8 @@
 import React from 'react';
-import iphoneblack from '../css/images/iphone-black.png';
+import iphoneblack from '../styles/images/iphone-black.png';
 
 const IphoneMockUp = (props) => (
     <img className="iphone" src={iphoneblack} alt="iphone mockup"/>
 );
 
-export default IphoneMockUp
+export default IphoneMockUp;

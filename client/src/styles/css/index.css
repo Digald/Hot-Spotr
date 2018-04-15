@@ -1,0 +1,241 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Start landing page style */
+.landing-cont {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: fixed;
+  overflow: hidden;
+  color: white;
+}
+
+.landing-cont:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  display: block;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.wrapper {
+  margin-top: 10vh;
+}
+
+.text-section {
+  margin-top: 15vh;
+}
+
+.inline-logo {
+  display: none;
+}
+
+.main-title {
+  font-size: 4vw;
+  color: white;
+}
+
+.sub-title {
+  font-size: 1.5vw;
+}
+
+.phone {
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 6vw;
+  }
+
+  .sub-title {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .inline-logo {
+    display: inline;
+  }
+
+  .main-title {
+    display: inline;
+    font-size: 13vw;
+  }
+
+  .sub-title {
+    font-size: 6vw;
+  }
+
+  .logo-col {
+    display: none;
+  }
+
+  .blank-col {
+    display: none;
+  }
+
+  .mobile-text {
+    text-align: center;
+  }
+
+  .phone {
+    display: none;
+    text-align: center;
+  }
+}
+/* End landing page style */
+/* Start dashboard style */
+.user-view {
+  margin-left: 250px;
+}
+
+/* End dashboard style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: grey;
+}
+
+.welcome-space {
+  width: 100%;
+  display: table;
+  text-align: center;
+  color: white;
+  height: 15vh;
+  border-bottom: 1px solid black;
+}
+
+.welcome-message {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-space {
+  padding: 20px 0;
+  height: 100%;
+  color: white;
+}
+
+.sidebar-link {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  padding: 10px 20px;
+  color: inherit;
+}
+
+.sidebar-link:hover {
+  background-color: lightgray;
+  color: inherit;
+}
+
+.fa-users,
+.fa-building {
+  color: black;
+  font-size: 25px;
+}
+
+/* Start sidebar style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: grey;
+}
+
+.welcome-space {
+  width: 100%;
+  display: table;
+  text-align: center;
+  color: white;
+  height: 15vh;
+  border-bottom: 1px solid black;
+}
+
+.welcome-message {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-space {
+  padding: 20px 0;
+  height: 100%;
+  color: white;
+}
+
+.sidebar-link {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  padding: 10px 20px;
+  color: inherit;
+}
+
+.sidebar-link:hover {
+  background-color: lightgray;
+  color: inherit;
+}
+
+.fa-users,
+.fa-building {
+  color: black;
+  font-size: 25px;
+}
+
+/* End sidebar style */
+/* Start iPhone mockup style */
+.iphone {
+  max-height: 90vh;
+  width: auto;
+}
+
+/* End iPhone mockup style */
+/* Start Logo style */
+.logo-image {
+  width: 8vw;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1408px) {
+  .logo-image {
+    width: 6vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .logo-image {
+    width: 9vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .logo-image {
+    width: 13vw;
+  }
+}
+/* End Logo style */
+@media screen and (max-width: 100px) {
+  .logo-image {
+    width: 13vw;
+  }
+}
