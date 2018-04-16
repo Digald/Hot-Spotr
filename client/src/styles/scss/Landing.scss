@@ -9,7 +9,7 @@ body {
 /* Start landing page style */
 
 .landing-cont {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/landing-background.jpg");
     background-size: cover;
     background-position: fixed;
     overflow: hidden;
@@ -25,7 +25,7 @@ body {
     margin: 0;
     z-index: 0;
     display: block;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/landing-background.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -104,12 +104,19 @@ body {
 /* End landing page style */
 
 /* Start dashboard style */
+.dashboard-cont {
+    background-image: url("../images/dashboard-background.jpg");
+    height: 100%;
+    /* Center and scale the image nicely */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .user-view {
     margin-left: 250px;
-    background-color: #9DB0BB;
 }
-
 /* End dashboard style */
 
 /* Start sidebar style */
@@ -121,6 +128,7 @@ body {
     height: 100%;
     width: 250px;
     background-color: #E17342;
+    opacity: .95;
     ;
 }
 
@@ -164,6 +172,11 @@ body {
 }
 
 /* End sidebar style */
+
+// 
+.Googlemaps {
+    opacity: .95;
+}
 
 /* Start iPhone mockup style */
 
