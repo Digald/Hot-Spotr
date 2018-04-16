@@ -108,12 +108,13 @@ body {
 /* End landing page style */
 /* Start dashboard style */
 .dashboard-cont {
-  background-image: url("../images/dashboard-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dashboard-background.jpg");
   height: 100%;
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .user-view {
