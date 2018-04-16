@@ -1,8 +1,10 @@
 import React from "react";
+import Logo2 from "../components/Logo2.js";
 
 const Sidebar = props => (
   <div className="sidebar">
     <div className="welcome-space">
+      <Logo2 unique="inline-logo2" />
       <div className="welcome-message">
         <h1>Welcome,</h1>
         <h2>{props.user}</h2>
