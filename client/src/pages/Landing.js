@@ -4,6 +4,7 @@ import { Container, Columns, Column } from "../components/grid";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
 import SocialMedia from '../components/SocialMedia.js';
+import Footer from '../components/Footer.js';
 
 class Landing extends React.Component {
   render() {
@@ -41,6 +42,7 @@ class Landing extends React.Component {
             </Columns>
           </div>
         </Container>
+        <Footer />
       </div>
     );
   }

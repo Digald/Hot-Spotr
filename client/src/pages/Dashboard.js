@@ -4,6 +4,7 @@ import Googlemaps from "../components/Googlemaps.js";
 import TargetIndustryForm from '../components/TargetIndustryForm';
 import TargetLocationForm from '../components/TargetLocationForm';
 import TargetDemographicsForm from '../components/TargetDemographicsForm';
+import Footer from '../components/Footer';
 
 class Dashboard extends React.Component {
   render() {
