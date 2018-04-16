@@ -10,7 +10,8 @@
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "installDeps": "yarn && cd client && yarn",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
   },
   "author": "",
   "license": "ISC",
@@ -32,7 +33,16 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.37.5",
-    "sequelize-cli": "^4.0.0"
+    "sequelize-cli": "^4.0.0",
+    "create-react-class": "^15.6.3",
+    "google-map-react": "^0.34.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^1.1.4",
+    "sass": "^1.2.0"
   },
   "repository": {
     "type": "git",
