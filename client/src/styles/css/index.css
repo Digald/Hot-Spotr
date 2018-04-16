@@ -190,6 +190,9 @@ body {
 }
 
 .logo2-image {
+  position: relative;
+  top: 26px;
+  right: 8px;
   width: 4vw;
   border-radius: 25px;
 }
