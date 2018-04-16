@@ -2,11 +2,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreator from '../actions/actionCreator';
 import Main from './Main';
+import store from '../store';
 
 function mapStateToProps(state) {
     return {
-        posts: state.posts,
-        comments: state.comments
+        profile: state.profile
     }
 }
 
