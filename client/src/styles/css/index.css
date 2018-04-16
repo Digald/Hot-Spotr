@@ -218,13 +218,6 @@ body {
   width: 8vw;
   border-radius: 25px;
 }
-/* Start modal style */
-.modal-content {
-  background-color: white;
-  color: black;
-  height: 50vh;
-}
-/* End modal style */
 
 @media screen and (min-width: 1408px) {
   .logo-image {

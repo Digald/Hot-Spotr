@@ -225,9 +225,10 @@ body {
 
 /* Start modal style */
 .modal-content {
-    background-color: white;
-}
-/* End modal style */
+    color: black;
+    height: 50vh;
+  }
+  /* End modal style */
 
 @media screen and (min-width: 1408px) {
     .logo-image {

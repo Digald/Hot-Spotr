@@ -1,20 +1,37 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
+import API from "../utils/API";
 
 class AuthModal extends Component {
   state = {
-    emailvalue: "",
-    passvalue: ""
+    email: "",
+    password: ""
   };
-  
-  handleEmailChange(e) {
-    this.setState({ email: e.target.value });
-  }
-  handleEmailChange(e) {
-    this.setState({ password: e.target.value });
-  }
-  handleSubmit(e) {
-    alert(this.state.emailvalue + this.state.passvalue);
-  }
+
+  handleInputChange = event => {
+    let value = event.target.value;
+    const name = event.target.name;
+
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (!this.state.email || !this.state.password) {
+      alert("Fill out your first and last name please!");
+    }
+    API.userSignUp({
+      email: this.state.email,
+      password: this.state.password
+    }).then(res=> {
+      //how do I redirect here
+    }).catch(err=>{
+      console.log(err);
+    }); 
+  };
+
   render() {
     return (
       <div className="modal is-active">
@@ -26,19 +43,25 @@ class AuthModal extends Component {
               Email:
               <input
                 type="text"
-                value={this.state.emailvalue}
-                onChange={this.handleEmailChange}
+                name="email"
+                value={this.state.email}
+                onChange={this.handleInputChange}
               />
             </label>
             <label>
               Password:
               <input
                 type="password"
-                value={this.state.passvalue}
-                onChange={this.handlePassChange}
+                name="password"
+                value={this.state.password}
+                onChange={this.handleInputChange}
               />
             </label>
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value="Sign Up"
+              onClick={this.handleFormSubmit}
+            />
           </form>
         </div>
         <button className="modal-close is-large" aria-label="close" />
