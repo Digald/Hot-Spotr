@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Columns, Column } from "../components/grid";
-import IphoneMockUp from "../components/IphoneMockUp.js";
+// import IphoneMockUp from "../components/IphoneMockUp.js";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
 

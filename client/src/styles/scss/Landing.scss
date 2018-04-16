@@ -61,6 +61,11 @@ body {
     text-align: left;
 }
 
+.button {
+    background-color: #E17342;
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 1024px) {
     .main-title {
         font-size: 6vw;
@@ -102,57 +107,10 @@ body {
 
 .user-view {
     margin-left: 250px;
+    background-color: #9DB0BB;
 }
 
 /* End dashboard style */
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    background-color: grey;
-}
-
-.welcome-space {
-    width: 100%;
-    display: table;
-    text-align: center;
-    color: white;
-    height: 15vh;
-    border-bottom: 1px solid black;
-}
-
-.welcome-message {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.menu-space {
-    padding: 20px 0;
-    height: 100%;
-    color: white;
-}
-
-.sidebar-link {
-    display: block;
-    font-size: 13px;
-    width: 100%;
-    padding: 10px 20px;
-    color: inherit;
-}
-
-.sidebar-link:hover {
-    background-color: lightgray;
-    color: inherit;
-}
-
-.fa-users,
-.fa-building {
-    color: black;
-    font-size: 25px;
-}
 
 /* Start sidebar style */
 
@@ -162,7 +120,8 @@ body {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: grey;
+    background-color: #E17342;
+    ;
 }
 
 .welcome-space {
@@ -194,7 +153,7 @@ body {
 }
 
 .sidebar-link:hover {
-    background-color: lightgray;
+    background-color: #9DB1BC;
     color: inherit;
 }
 
