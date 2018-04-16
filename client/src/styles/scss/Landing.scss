@@ -1,6 +1,5 @@
 html,
 body {
-    background-image: url("../images/landing-background.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -57,10 +56,6 @@ body {
     font-size: 1.5vw;
 }
 
-.phone {
-    text-align: left;
-}
-
 .button {
     background-color: #E17342;
     color: #FFFFFF;
@@ -93,10 +88,6 @@ body {
         display: none;
     }
     .mobile-text {
-        text-align: center;
-    }
-    .phone {
-        display: none;
         text-align: center;
     }
 }
@@ -174,20 +165,6 @@ body {
 
 /* End sidebar style */
 
-//
-.Googlemaps {
-    opacity: .95;
-}
-
-/* Start iPhone mockup style */
-
-.iphone {
-    max-height: 90vh;
-    width: auto;
-}
-
-/* End iPhone mockup style */
-
 /* Start Logo style */
 
 .logo-image {
@@ -214,14 +191,14 @@ body {
     position: relative;
     top: 40px;
     height: 40px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .footer-block {
     position: relative;
     text-align: center;
     color: #FFFFFF;
-    top: 270px;
+    top: 300px;
 }
 
 @media screen and (min-width: 1408px) {

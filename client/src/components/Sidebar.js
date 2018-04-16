@@ -1,5 +1,6 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
+import SocialMedia from "./SocialMedia.js";
 
 const Sidebar = props => (
   <div className="sidebar">
@@ -41,6 +42,7 @@ const Sidebar = props => (
           <i className="fas fa-users" />
         </span> LOGOUT
       </a>
+      <SocialMedia />
     </div>
   </div>
 );
