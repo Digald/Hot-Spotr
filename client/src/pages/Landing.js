@@ -22,10 +22,11 @@ class Landing extends React.Component {
                     unique="mobile-text"
                   >
                     <Logo unique="inline-logo" />
-                    <h1 className="main-title">Buisnes App</h1>
-                    <p className="sub-title">So that you don't have too.</p>
+                    <h1 className="main-title">Hot Spotr</h1>
+                    <p className="sub-title">Identify the low hanging fruit.</p>
                     <Columns>
                       <Column>
+                        <GenericBtn>Sign Up</GenericBtn>
                         <GenericBtn>Sign In</GenericBtn>
                       </Column>
                     </Columns>
@@ -33,7 +34,7 @@ class Landing extends React.Component {
                 </Columns>
               </Column>
               <Column size="is-5" unique="phone">
-                <IphoneMockUp />
+                {/* <IphoneMockUp /> */}
               </Column>
             </Columns>
           </div>
