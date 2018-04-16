@@ -50,6 +50,7 @@ module.exports = function(passport, user) {
               console.log("wrong password");
               done(null, false, req.flash("loginMessage", "Wrong password"));
             } else {
+              console.log('success login!');
               done(null, user);
             }
           })
@@ -77,8 +78,6 @@ module.exports = function(passport, user) {
         passReqToCallback: true // allows us to pass in the req from our route (lets us check if a user is logged in or not)
       },
       function(req, email, password, done) {
-        console.log(email);
-        console.log(password);
         //  Whether we're signing up or connecting an account, we'll need
         //  to know if the email address is in use.
 
@@ -94,7 +93,6 @@ module.exports = function(passport, user) {
 
             //  If we're logged in, we're connecting a new local account.
             if (req.user) {
-              console.log("second if hit")
               var user = req.user;
               user.localemail = email;
               user.localpassword = User.generateHash(password);
@@ -114,11 +112,9 @@ module.exports = function(passport, user) {
                 localemail: email,
                 localpassword: bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
               });
-              console.log(newUser);
               newUser
                 .save()
                 .then(function(result) {
-                  console.log(result)
                   done(null, newUser);
                 })
                 .catch(function(err) {
