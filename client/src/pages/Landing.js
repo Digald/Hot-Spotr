@@ -3,12 +3,14 @@ import { Container, Columns, Column } from "../components/grid";
 // import IphoneMockUp from "../components/IphoneMockUp.js";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
+import SocialMedia from '../components/SocialMedia.js';
 
 class Landing extends React.Component {
   render() {
     return (
       <div className="landing-cont">
         <Container size="is-fluid">
+          <SocialMedia />
           <div className="wrapper">
             <Columns style="is-tablet is-centered">
               <Column unique="text-section">
