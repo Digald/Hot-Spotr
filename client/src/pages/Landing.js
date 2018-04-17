@@ -3,18 +3,24 @@ import { Container, Columns, Column } from "../components/Grid";
 import IphoneMockUp from "../components/IphoneMockUp.js";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
-import AuthModal from '../components/AuthModal.js';
+import AuthModal from "../components/AuthModal.js";
 
 class Landing extends React.Component {
   state = {
-    activeModal: false
-  }
+    activeModal: false,
+    clickedBtn: ""
+  };
 
-  toggleModal = () => {
+  toggleSignUp = () => {
     const currentState = this.state.activeModal;
-    this.setState({ activeModal: !currentState });
-    console.log(this.state.activeModal);
-  }
+    this.setState({ activeModal: !currentState, clickedBtn: "signup" });
+    console.log(this.state.clickedBtn);
+  };
+
+  toggleLogIn = () => {
+    const currentState = this.state.activeModal;
+    this.setState({ activeModal: !currentState, clickedBtn: "login" });
+  };
 
   render() {
     return (
@@ -37,8 +43,12 @@ class Landing extends React.Component {
                     <p className="sub-title">Identify the low hanging fruit.</p>
                     <Columns>
                       <Column>
-                        <GenericBtn toggleModal={this.toggleModal}>Sign Up</GenericBtn>
-                        <GenericBtn>Sign In</GenericBtn>
+                        <GenericBtn toggleModal={this.toggleSignUp}>
+                          Sign Up
+                        </GenericBtn>
+                        <GenericBtn toggleModal={this.toggleLogIn}>
+                          Sign In
+                        </GenericBtn>
                       </Column>
                     </Columns>
                   </Column>
@@ -48,7 +58,11 @@ class Landing extends React.Component {
                 {/* <IphoneMockUp /> */}
               </Column>
             </Columns>
-            <AuthModal activeModal={this.state.activeModal} toggleModal={this.toggleModal}/>
+            <AuthModal
+              activeModal={this.state.activeModal}
+              clickedBtn={this.state.clickedBtn}
+              toggleModal={this.toggleSignUp}
+            />
           </div>
         </Container>
       </div>

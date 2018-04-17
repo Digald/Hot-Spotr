@@ -21,15 +21,19 @@ class AuthModal extends Component {
     if (!this.state.email || !this.state.password) {
       alert("Fill out your first and last name please!");
     }
-    API.userSignUp({
-      email: this.state.email,
-      password: this.state.password
-    }).then(res=> {
-      console.log(res);
-      window.location.replace("/mydash");
-    }).catch(err=>{
-      console.log(err);
-    }); 
+    if (this.props.clickedBtn === "signup") {
+      API.userSignUp({
+        email: this.state.email,
+        password: this.state.password
+      }).then(res=> {
+        console.log(res);
+        window.location.replace("/mydash");
+      }).catch(err=>{
+        console.log(err);
+      }); 
+    } else if (this.props.clickedBtn === "login") {
+      // login API here
+    }
   };
 
   render() {
