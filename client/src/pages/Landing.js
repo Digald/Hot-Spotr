@@ -29,8 +29,8 @@ class Landing extends React.Component {
                     <p className="sub-title">Identify the low hanging fruit.</p>
                     <Columns>
                       <Column>
-                        <GenericBtn>Sign Up</GenericBtn>
-                        <GenericBtn>Sign In</GenericBtn>
+                        <GenericBtn buttonClass="sign-in-button">Sign In</GenericBtn>
+                        <GenericBtn buttonClass="sign-up-button">Sign Up</GenericBtn>
                       </Column>
                     </Columns>
                   </Column>
