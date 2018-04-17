@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = props => (
   <div className="sidebar">
@@ -12,33 +13,40 @@ const Sidebar = props => (
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-building" />
-        </span> TARGET INDUSTRY
+        </span>{" "}
+        TARGET INDUSTRY
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> TARGET LOCATION
+        </span>{" "}
+        TARGET LOCATION
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> TARGET DEMOGRAPHICS
+        </span>{" "}
+        TARGET DEMOGRAPHICS
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> TRAFFIC OUTLOOK
+        </span>{" "}
+        TRAFFIC OUTLOOK
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> COMPETITION HEATMAP
+        </span>{" "}
+        COMPETITION HEATMAP
       </a>
-      <a className="sidebar-link">
+      <a className="sidebar-link" href="/logout">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> LOGOUT
+        </span>{" "}
+        LOGOUT
       </a>
+      
     </div>
   </div>
 );

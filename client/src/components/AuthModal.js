@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom';
 import API from "../utils/API";
 
 class AuthModal extends Component {
@@ -26,7 +25,8 @@ class AuthModal extends Component {
       email: this.state.email,
       password: this.state.password
     }).then(res=> {
-      //how do I redirect here
+      console.log(res);
+      window.location.replace("/mydash");
     }).catch(err=>{
       console.log(err);
     }); 
