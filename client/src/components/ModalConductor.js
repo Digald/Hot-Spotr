@@ -20,7 +20,7 @@ const ModalConductor = props => {
             return <TargetDemographicsForm {...props} />;
 
         default:
-            return null;
+            return <TargetDemographicsForm />;
     }
 };
 
