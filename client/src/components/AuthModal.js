@@ -25,20 +25,32 @@ class AuthModal extends Component {
       API.userSignUp({
         email: this.state.email,
         password: this.state.password
-      }).then(res=> {
-        console.log(res);
-        window.location.replace("/mydash");
-      }).catch(err=>{
-        console.log(err);
-      }); 
+      })
+        .then(res => {
+          console.log(res);
+          window.location.replace("/mydash");
+        })
+        .catch(err => {
+          console.log(err);
+        });
     } else if (this.props.clickedBtn === "login") {
-      // login API here
+      API.userLogIn({
+        email: this.state.email,
+        password: this.state.password
+      })
+        .then(res => {
+          console.log(res);
+          window.location.replace("/mydash");
+        })
+        .catch(err => {
+          console.log(err);
+        });
     }
   };
 
   render() {
     return (
-      <div className={`modal ${this.props.activeModal ? 'is-active': null}`}>
+      <div className={`modal ${this.props.activeModal ? "is-active" : null}`}>
         <div className="modal-background" />
         <div className="modal-content">
           <h1>{this.props.authtitle}</h1>
@@ -68,7 +80,11 @@ class AuthModal extends Component {
             />
           </form>
         </div>
-        <button className="modal-close is-large" aria-label="close" onClick={() => this.props.toggleModal()} />
+        <button
+          className="modal-close is-large"
+          aria-label="close"
+          onClick={() => this.props.toggleModal()}
+        />
       </div>
     );
   }
