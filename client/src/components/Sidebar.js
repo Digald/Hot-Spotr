@@ -42,7 +42,7 @@ const Sidebar = props => (
           <i className="fas fa-users" />
         </span> LOGOUT
       </a>
-      <SocialMedia />
+      <SocialMedia socialClass="sidebar-social" />
     </div>
   </div>
 );

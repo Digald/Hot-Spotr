@@ -177,7 +177,7 @@ body {
   border-radius: 25px;
 }
 
-.social {
+.landing-social {
   text-align: right;
   position: relative;
   bottom: 20px;
@@ -214,3 +214,8 @@ body {
   }
 }
 /* End Logo style */
+.sidebar-social {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}

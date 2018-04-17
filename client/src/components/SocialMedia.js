@@ -5,7 +5,7 @@ import google from '../styles/images/google.svg';
 import twitter from '../styles/images/twitter.svg';
 
 const SocialMedia = props => (
-    <div className='social'>
+    <div className={props.socialClass}>
         <a href='https://www.facebook.com' target='_blank' rel="noopener noreferrer">
             <img src={facebook} className={`social-icon ${props.unique}`} alt='facebook' />
         </a>

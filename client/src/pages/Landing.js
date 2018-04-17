@@ -11,7 +11,7 @@ class Landing extends React.Component {
     return (
       <div className="landing-cont">
         <Container size="is-fluid">
-          <SocialMedia />
+          <SocialMedia socialClass="landing-social" />
           <div className="wrapper">
             <Columns style="is-tablet is-centered">
               <Column unique="text-section">
