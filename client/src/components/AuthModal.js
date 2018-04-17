@@ -34,7 +34,7 @@ class AuthModal extends Component {
 
   render() {
     return (
-      <div className="modal is-active">
+      <div className={`modal ${this.props.activeModal ? 'is-active': null}`}>
         <div className="modal-background" />
         <div className="modal-content">
           <h1>{this.props.authtitle}</h1>
@@ -64,7 +64,7 @@ class AuthModal extends Component {
             />
           </form>
         </div>
-        <button className="modal-close is-large" aria-label="close" />
+        <button className="modal-close is-large" aria-label="close" onClick={() => this.props.toggleModal()} />
       </div>
     );
   }

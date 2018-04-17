@@ -6,6 +6,16 @@ import GenericBtn from "../components/GenericBtn.js";
 import AuthModal from '../components/AuthModal.js';
 
 class Landing extends React.Component {
+  state = {
+    activeModal: false
+  }
+
+  toggleModal = () => {
+    const currentState = this.state.activeModal;
+    this.setState({ activeModal: !currentState });
+    console.log(this.state.activeModal);
+  }
+
   render() {
     return (
       <div className="landing-cont">
@@ -27,7 +37,7 @@ class Landing extends React.Component {
                     <p className="sub-title">Identify the low hanging fruit.</p>
                     <Columns>
                       <Column>
-                        <GenericBtn>Sign Up</GenericBtn>
+                        <GenericBtn toggleModal={this.toggleModal}>Sign Up</GenericBtn>
                         <GenericBtn>Sign In</GenericBtn>
                       </Column>
                     </Columns>
@@ -38,7 +48,7 @@ class Landing extends React.Component {
                 {/* <IphoneMockUp /> */}
               </Column>
             </Columns>
-            <AuthModal/>
+            <AuthModal activeModal={this.state.activeModal} toggleModal={this.toggleModal}/>
           </div>
         </Container>
       </div>
