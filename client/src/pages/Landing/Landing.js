@@ -4,8 +4,20 @@ import { Container, Columns, Column } from "../../components/Grid";
 import IphoneMockUp from "../../components/IphoneMockUp";
 import Logo from "../../components/Logo";
 import GenericBtn from "../../components/Buttons";
+import Census from "../../components/Census_Test/Census";
+
 
 class Landing extends Component {
+  componentDidMount(){Census.getCensus().then(
+    res=>{
+      console.log(res);
+    }
+  ).catch(
+    err=>{
+      console.log(err);
+    }
+  )};
+
   render() {
     return (
       <div className="landing-cont">
