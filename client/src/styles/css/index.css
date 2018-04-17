@@ -181,6 +181,10 @@ body {
   top: 200px;
 }
 
+.socialClass {
+  color: #573525;
+}
+
 .fa-users,
 .fa-building,
 .fa-map,
@@ -188,7 +192,7 @@ body {
 .fa-arrow-circle-left {
   position: relative;
   top: 6px;
-  color: black;
+  color: #573525;
   font-size: 25px;
   margin-right: 14px;
 }
