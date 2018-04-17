@@ -30,11 +30,6 @@ const Sidebar = props => (
       <a className="sidebar-link">
         <span className="icon has-text-success">
           <i className="fas fa-users" />
-        </span> TRAFFIC OUTLOOK
-      </a>
-      <a className="sidebar-link">
-        <span className="icon has-text-success">
-          <i className="fas fa-users" />
         </span> COMPETITION HEATMAP
       </a>
       <a className="sidebar-link">

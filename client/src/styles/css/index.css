@@ -9,7 +9,6 @@ body {
   font-family: sans-serif;
 }
 
-/* Start landing page style */
 .landing-cont {
   color: white;
 }
@@ -38,6 +37,13 @@ body {
   margin-top: 10vh;
 }
 
+.landing-social {
+  text-align: right;
+  position: relative;
+  bottom: 60px;
+  left: 20px;
+}
+
 .text-section {
   margin-top: 15vh;
 }
@@ -53,12 +59,6 @@ body {
 
 .sub-title {
   font-size: 1.5vw;
-}
-
-.button {
-  background-color: #E17342;
-  color: #FFFFFF;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,9 +96,8 @@ body {
     text-align: center;
   }
 }
-/* End landing page style */
-/* Start dashboard style */
 .dashboard-cont {
+  max-height: 1080px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dashboard-background.jpg");
   height: 100%;
   /* Center and scale the image nicely */
@@ -110,10 +109,9 @@ body {
 
 .user-view {
   margin-left: 250px;
+  max-height: 1080px;
 }
 
-/* End dashboard style */
-/* Start sidebar style */
 .sidebar {
   position: fixed;
   top: 0;
@@ -157,14 +155,19 @@ body {
   color: inherit;
 }
 
+.sidebar-social {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
 .fa-users,
 .fa-building {
   color: black;
   font-size: 25px;
+  margin-right: 16px;
 }
 
-/* End sidebar style */
-/* Start Logo style */
 .logo-image {
   width: 8vw;
   border-radius: 25px;
@@ -178,16 +181,9 @@ body {
   border-radius: 25px;
 }
 
-.landing-social {
-  text-align: right;
-  position: relative;
-  bottom: 20px;
-  left: 20px;
-}
-
 .social-icon {
   position: relative;
-  top: 40px;
+  top: 90px;
   height: 40px;
   margin-left: 8px;
 }
@@ -214,9 +210,8 @@ body {
     width: 13vw;
   }
 }
-/* End Logo style */
-.sidebar-social {
-  text-align: center;
-  position: relative;
-  top: 200px;
+.button {
+  background-color: #E17342;
+  color: #FFFFFF;
+  margin-right: 10px;
 }

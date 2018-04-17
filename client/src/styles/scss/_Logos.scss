@@ -1,0 +1,44 @@
+.logo-image {
+    width: 8vw;
+    border-radius: 25px;
+}
+
+.logo2-image {
+    position: fixed;
+    top: 24px;
+    left: 12px;
+    width: 4vw;
+    border-radius: 25px;
+}
+
+.social-icon {
+    position: relative;
+    top: 90px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+.footer-block {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    top: 300px;
+}
+
+@media screen and (min-width: 1408px) {
+    .logo-image {
+        width: 6vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-image {
+        width: 9vw;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .logo-image {
+        width: 13vw;
+    }
+}

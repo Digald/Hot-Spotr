@@ -16,9 +16,6 @@ class Dashboard extends React.Component {
           <h1 className="section-header">Geographical Outlook</h1>
           <Googlemaps />
           <br /><h1 className="section-header">Statistical Outlook</h1>
-          <TargetIndustryForm />
-          <TargetLocationForm />
-          <TargetDemographicsForm />
         </div>
       </div>
     );

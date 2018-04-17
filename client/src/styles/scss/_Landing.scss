@@ -1,0 +1,93 @@
+html,
+body {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.landing-cont {
+    color: white;
+}
+
+.landing-cont:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    display: block;
+    background-image: url("../images/landing-background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.wrapper {
+    margin-top: 10vh;
+}
+
+.landing-social {
+    text-align: right;
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+}
+
+.text-section {
+    margin-top: 15vh;
+}
+
+.inline-logo {
+    display: none;
+}
+
+.main-title {
+    font-size: 4vw;
+    color: white;
+}
+
+.sub-title {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-title {
+        font-size: 6vw;
+    }
+    .sub-title {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .inline-logo {
+        display: inline;
+    }
+    .main-title {
+        display: inline;
+        font-size: 13vw;
+    }
+    .sub-title {
+        font-size: 6vw;
+    }
+    .logo-col {
+        display: none;
+    }
+    .blank-col {
+        display: none;
+    }
+    .mobile-text {
+        text-align: center;
+    }
+}
