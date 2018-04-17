@@ -40,6 +40,11 @@
 .sidebar-link:hover {
     background-color: #9DB1BC;
     color: inherit;
+    background: #9DB1BC;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
 }
 
 .sidebar-social {

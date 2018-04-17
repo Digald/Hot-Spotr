@@ -15,6 +15,7 @@
     "react-router-link": "^2.0.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.0.14",
+    "react-transition-group": "^2.3.1",
     "redux": "^3.7.2",
     "sass": "^1.2.0"
   },
