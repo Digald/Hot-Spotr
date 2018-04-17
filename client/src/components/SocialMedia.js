@@ -7,16 +7,16 @@ import twitter from '../styles/images/twitter.svg';
 const SocialMedia = props => (
     <div className={props.socialClass}>
         <a href='https://www.facebook.com' target='_blank' rel="noopener noreferrer">
-            <img src={facebook} className={`social-icon ${props.unique}`} alt='facebook' />
+            <img src={facebook} className='social-icon' alt='facebook' />
         </a>
         <a href='https://www.twitter.com' target='_blank' rel="noopener noreferrer">
-            <img src={twitter} className={`social-icon ${props.unique}`} alt='twitter' />
+            <img src={twitter} className='social-icon' alt='twitter' />
         </a>
         <a href='https://www.instagram.com' target='_blank' rel="noopener noreferrer">
-            <img src={instagram} className={`social-icon ${props.unique}`} alt='instagram' />
+            <img src={instagram} className='social-icon' alt='instagram' />
         </a>
         <a href='https://plus.google.com/' target='_blank' rel="noopener noreferrer">
-            <img src={google} className={`social-icon ${props.unique}`} alt='google' />
+            <img src={google} className='social-icon' alt='google' />
         </a>
     </div>
 )

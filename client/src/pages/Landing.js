@@ -40,8 +40,8 @@ class Landing extends React.Component {
               </Column>
             </Columns>
           </div>
+          <Footer />
         </Container>
-        <Footer />
       </div>
     );
   }
