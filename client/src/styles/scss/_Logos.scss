@@ -1,5 +1,9 @@
+.inline-logo {
+    display: none;
+}
+
 .logo-image {
-    width: 8vw;
+    width: 120px;
     border-radius: 25px;
 }
 
@@ -27,18 +31,18 @@
 
 @media screen and (min-width: 1408px) {
     .logo-image {
-        width: 6vw;
+        // width: 6vw;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .logo-image {
-        width: 9vw;
+        // width: 9vw;
     }
 }
 
 @media screen and (max-width: 769px) {
     .logo-image {
-        width: 13vw;
+        // width: 13vw;
     }
 }

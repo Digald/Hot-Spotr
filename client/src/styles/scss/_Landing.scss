@@ -44,21 +44,28 @@ body {
     left: 20px;
 }
 
+.fa-github-alt {
+    position: relative;
+    color: #FFFF;
+    font-size: 18px;
+    margin-right: 4px;
+}
+
 .text-section {
     margin-top: 15vh;
 }
 
-.inline-logo {
-    display: none;
-}
-
 .main-title {
-    font-size: 4vw;
+    font-size: 6vw;
     color: white;
 }
 
 .sub-title {
     font-size: 1.5vw;
+}
+
+.mobile-text {
+    width: 400px;
 }
 
 @media screen and (max-width: 1024px) {

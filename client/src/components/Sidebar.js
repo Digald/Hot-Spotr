@@ -19,7 +19,7 @@ const Sidebar = props => (
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
-          <i className="fas fa-users" />
+          <i className="fas fa-map-marker-alt" />
         </span> TARGET LOCATION
       </a>
       <a className="sidebar-link">
@@ -29,12 +29,12 @@ const Sidebar = props => (
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
-          <i className="fas fa-users" />
+          <i className="fas fa-map" />
         </span> COMPETITION HEATMAP
       </a>
       <a className="sidebar-link">
         <span className="icon has-text-success">
-          <i className="fas fa-users" />
+          <i className="fas fa-arrow-circle-left" />
         </span> LOGOUT
       </a>
       <SocialMedia socialClass="sidebar-social" />

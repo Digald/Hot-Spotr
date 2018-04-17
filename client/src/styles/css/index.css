@@ -44,21 +44,28 @@ body {
   left: 20px;
 }
 
+.fa-github-alt {
+  position: relative;
+  color: #FFFF;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
 .text-section {
   margin-top: 15vh;
 }
 
-.inline-logo {
-  display: none;
-}
-
 .main-title {
-  font-size: 4vw;
+  font-size: 6vw;
   color: white;
 }
 
 .sub-title {
   font-size: 1.5vw;
+}
+
+.mobile-text {
+  width: 400px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -160,7 +167,6 @@ body {
 }
 
 .sidebar-link:hover {
-  background-color: #9DB1BC;
   color: inherit;
   background: #9DB1BC;
   -webkit-transition: 0.9s;
@@ -176,14 +182,23 @@ body {
 }
 
 .fa-users,
-.fa-building {
+.fa-building,
+.fa-map,
+.fa-map-marker-alt,
+.fa-arrow-circle-left {
+  position: relative;
+  top: 6px;
   color: black;
   font-size: 25px;
-  margin-right: 16px;
+  margin-right: 14px;
+}
+
+.inline-logo {
+  display: none;
 }
 
 .logo-image {
-  width: 8vw;
+  width: 120px;
   border-radius: 25px;
 }
 
@@ -209,21 +224,6 @@ body {
   top: 300px;
 }
 
-@media screen and (min-width: 1408px) {
-  .logo-image {
-    width: 6vw;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .logo-image {
-    width: 9vw;
-  }
-}
-@media screen and (max-width: 769px) {
-  .logo-image {
-    width: 13vw;
-  }
-}
 .button {
   background-color: #E17342;
   color: #FFFFFF;
