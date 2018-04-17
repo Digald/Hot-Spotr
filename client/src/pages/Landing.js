@@ -37,7 +37,6 @@ class Landing extends React.Component {
                 </Columns>
               </Column>
               <Column size="is-5" unique="phone">
-                {/* <IphoneMockUp /> */}
               </Column>
             </Columns>
           </div>
