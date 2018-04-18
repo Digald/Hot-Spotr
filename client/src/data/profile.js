@@ -1,7 +1,7 @@
 const profile = {
     "BAhvZrRwcfu": [
         {
-            "text": "Totally need to try this.",
+            "location": "Austin",
             "user": "heavymetaladam"
         }
     ],
