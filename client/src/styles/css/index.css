@@ -49,12 +49,12 @@ body {
 
 .main-title {
   font-size: 6vw;
-  color: white;
+  color: #DAD6C7;
 }
 
 .sub-title {
   font-size: 1.5vw;
-  color: white;
+  color: #DAD6C7;
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,6 +96,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  min-height: 900px;
+  max-height: 1200px;
 }
 
 .map {
@@ -103,19 +105,28 @@ body {
   top: 15vh;
 }
 
-.dashboard-cont {
+.dashboard-cont:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dashboard-background.jpg");
+  background-size: cover;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dashboard-background.jpg");
-  background-position: fixed;
-  background-size: cover;
-  display: block;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .user-view {
   margin-left: 250px;
-  min-height: 900px;
-  max-height: 1200px;
 }
 
 .sidebar {
@@ -209,7 +220,7 @@ body {
 
 .fa-github-alt {
   position: relative;
-  color: #FFFF;
+  color: #DAD6C7;
   font-size: 18px;
   margin-right: 4px;
 }
@@ -224,5 +235,5 @@ body {
   position: relative;
   top: 64px;
   text-align: center;
-  color: #FFFF;
+  color: #DAD6C7;
 }
