@@ -1,0 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from '../store';
+import App from './App';
+import Landing from '../pages/Landing';
+import Dashboard from '../pages/Dashboard';
+import ModalConductor from './ModalConductor';
+
+const Router = () => (
+    <Provider store={store}>
+        <BrowserRouter store={store}>
+            <Switch store={store}>
+                <Route store={store} exact path='/' component={Landing} />
+                <Route store={store} exact path='/mydash' component={Dashboard} />
+                <Route store={store} path='/store/:profile-section' component={ModalConductor} />
+                <Route store={store} path='/store/:storeId' component={App} />
+            </Switch>
+        </BrowserRouter>
+    </Provider>
+)
+
+export default Router;

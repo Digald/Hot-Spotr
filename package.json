@@ -10,7 +10,8 @@
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "installDeps": "yarn && cd client && yarn",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
   },
   "author": "",
   "license": "ISC",
@@ -20,8 +21,18 @@
   },
   "dependencies": {
     "body-parser": "^1.18.2",
+    "bulma": "^0.7.0",
+    "create-react-class": "^15.6.3",
     "express": "^4.15.4",
+    "google-map-react": "^0.34.0",
     "mysql2": "^1.5.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^1.1.4",
+    "sass": "^1.2.0",
     "sequelize": "^4.37.5"
   },
   "repository": {

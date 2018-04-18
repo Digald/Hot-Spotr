@@ -1,0 +1,65 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #E17342;
+    opacity: .95;
+    ;
+}
+
+.welcome-space {
+    width: 100%;
+    display: table;
+    text-align: center;
+    color: white;
+    height: 15vh;
+    border-bottom: 1px solid black;
+}
+
+.welcome-message {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-space {
+    padding: 20px 0;
+    height: 100%;
+    color: white;
+}
+
+.sidebar-link {
+    display: block;
+    font-size: 13px;
+    width: 100%;
+    padding: 10px 20px;
+    color: inherit;
+}
+
+.sidebar-link:hover {
+    color: inherit;
+    background: #9DB1BC;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+}
+
+.sidebar-social {
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.fa-users,
+.fa-building,
+.fa-map,
+.fa-map-marker-alt,
+.fa-arrow-circle-left {
+    position: relative;
+    top: 8px;
+    color: #573525;
+    font-size: 25px;
+    margin-right: 14px;
+}

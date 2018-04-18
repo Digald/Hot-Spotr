@@ -1,0 +1,225 @@
+html,
+body {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.landing-cont:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  display: block;
+  background-image: url("../images/landing-background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.wrapper {
+  margin-top: 10vh;
+}
+
+.landing-social {
+  text-align: right;
+  position: relative;
+  bottom: 60px;
+  left: 20px;
+}
+
+.text-section {
+  position: relative;
+  right: 60px;
+  margin-top: 15vh;
+}
+
+.main-title {
+  font-size: 6vw;
+  color: white;
+}
+
+.sub-title {
+  font-size: 1.5vw;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 6vw;
+  }
+
+  .sub-title {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .inline-logo {
+    display: inline;
+  }
+
+  .main-title {
+    display: inline;
+    font-size: 13vw;
+  }
+
+  .sub-title {
+    font-size: 6vw;
+  }
+
+  .logo-col {
+    display: none;
+  }
+
+  .blank-col {
+    display: none;
+  }
+}
+html,
+body {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.map {
+  position: relative;
+  top: 15vh;
+}
+
+.dashboard-cont {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dashboard-background.jpg");
+  background-position: fixed;
+  background-size: cover;
+  display: block;
+}
+
+.user-view {
+  margin-left: 250px;
+  height: 1080px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #E17342;
+  opacity: 0.95;
+}
+
+.welcome-space {
+  width: 100%;
+  display: table;
+  text-align: center;
+  color: white;
+  height: 15vh;
+  border-bottom: 1px solid black;
+}
+
+.welcome-message {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-space {
+  padding: 20px 0;
+  height: 100%;
+  color: white;
+}
+
+.sidebar-link {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  padding: 10px 20px;
+  color: inherit;
+}
+
+.sidebar-link:hover {
+  color: inherit;
+  background: #9DB1BC;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+}
+
+.sidebar-social {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.fa-users,
+.fa-building,
+.fa-map,
+.fa-map-marker-alt,
+.fa-arrow-circle-left {
+  position: relative;
+  top: 8px;
+  color: #573525;
+  font-size: 25px;
+  margin-right: 14px;
+}
+
+.inline-logo {
+  display: none;
+}
+
+.logo-image {
+  width: 120px;
+  border-radius: 25px;
+}
+
+.logo2-image {
+  position: fixed;
+  top: 24px;
+  left: 12px;
+  width: 4vw;
+  border-radius: 25px;
+}
+
+.social-icon {
+  position: relative;
+  top: 90px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.fa-github-alt {
+  position: relative;
+  color: #FFFF;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.button {
+  background-color: #E17342;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.footer-block {
+  position: relative;
+  text-align: center;
+  color: #FFFF;
+  top: 310px;
+}
