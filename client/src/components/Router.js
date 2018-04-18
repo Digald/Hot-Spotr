@@ -9,12 +9,12 @@ import ModalConductor from './ModalConductor';
 
 const Router = () => (
     <Provider store={store}>
-        <BrowserRouter>
-            <Switch>
-                <Route exact path='/' component={Landing} />
-                <Route exact path='/mydash' component={Dashboard} />
-                <Route path='/store/:profile-section' component={ModalConductor} />
-                <Route path='/store/:storeId' component={App} />
+        <BrowserRouter store={store}>
+            <Switch store={store}>
+                <Route store={store} exact path='/' component={Landing} />
+                <Route store={store} exact path='/mydash' component={Dashboard} />
+                <Route store={store} path='/store/:profile-section' component={ModalConductor} />
+                <Route store={store} path='/store/:storeId' component={App} />
             </Switch>
         </BrowserRouter>
     </Provider>

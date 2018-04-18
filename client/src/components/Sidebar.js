@@ -12,27 +12,27 @@ const Sidebar = props => (
       </div>
     </div>
     <div className="menu-space">
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => this.props.ModalConductor(this.props.index)}>
         <span className="icon has-text-success">
           <i className="fas fa-building" />
         </span> TARGET INDUSTRY
       </a>
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => this.props.ModalConductor(this.props.index)}>
         <span className="icon has-text-success">
           <i className="fas fa-map-marker-alt" />
         </span> TARGET LOCATION
       </a>
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => this.props.ModalConductor(this.props.index)}>
         <span className="icon has-text-success">
           <i className="fas fa-users" />
         </span> TARGET DEMOGRAPHICS
       </a>
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => this.props.ModalConductor(this.props.index)}>
         <span className="icon has-text-success">
           <i className="fas fa-map" />
         </span> COMPETITION HEATMAP
       </a>
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => this.props.ModalConductor(this.props.index)}>
         <span className="icon has-text-success">
           <i className="fas fa-arrow-circle-left" />
         </span> LOGOUT
