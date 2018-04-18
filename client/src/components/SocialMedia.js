@@ -1,8 +1,8 @@
 import React from 'react';
-import facebook from '../styles/images/facebook.svg';
-import instagram from '../styles/images/instagram.svg';
-import google from '../styles/images/google.svg';
-import twitter from '../styles/images/twitter.svg';
+import facebook from '../styles/images/facebook-brown.svg';
+import instagram from '../styles/images/instagram-brown.svg';
+import google from '../styles/images/google-brown.svg';
+import twitter from '../styles/images/twitter-brown.svg';
 
 const SocialMedia = props => (
     <div className={props.socialClass}>
