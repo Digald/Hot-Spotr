@@ -30,6 +30,8 @@ body {
 
 .wrapper {
   margin-top: 10vh;
+  min-height: 900px;
+  max-height: 1200px;
 }
 
 .landing-social {
@@ -219,7 +221,7 @@ body {
 
 .footer-block {
   position: relative;
+  top: 64px;
   text-align: center;
   color: #FFFF;
-  top: 310px;
 }
