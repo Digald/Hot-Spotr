@@ -64,6 +64,7 @@ class AuthModal extends Component {
                 onChange={this.handleInputChange}
               />
             </label>
+            <br/>
             <label>
               Password:
               <input
@@ -73,6 +74,7 @@ class AuthModal extends Component {
                 onChange={this.handleInputChange}
               />
             </label>
+            <br/>
             <input
               type="submit"
               value={this.props.clickedBtn}

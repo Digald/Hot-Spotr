@@ -8,6 +8,6 @@ export default {
     return axios.post('/login', userdata);
   },
   getIndustries: function(keyword) {
-    return axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=30.2672,-97.7431&radius=50000&keyword=' + keyword + '&key=AIzaSyBj2iAiGV1zywVVzlZSaIM1y3VPpCUqRF0');
+    return axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&keyword=cruise&key=AIzaSyBj2iAiGV1zywVVzlZSaIM1y3VPpCUqRF0')
   }
 };

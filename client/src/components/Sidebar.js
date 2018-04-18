@@ -1,8 +1,6 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
 import SocialMedia from "./SocialMedia.js";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import Drawer from "material-ui/Drawer";
 
 class Sidebar extends React.Component {
   render() {
@@ -17,7 +15,7 @@ class Sidebar extends React.Component {
         <div className="menu-space">
           <a
             className="sidebar-link"
-            onClick={() => this.props.handleToggle()}
+            onClick={() => this.props.handleToggleIndustry()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-building" />
