@@ -1,24 +1,26 @@
 import React from 'react';
-import ModalWrapper from './ModalWrapper';
+// import ModalWrapper from './ModalWrapper';
 
-const TargetDemographicsForm = props => {
-    const updateDemographic = demographic => {
-        props.hideModal();
-        props.updateDemographic(demographic);
-    };
-
-    return (
-        <ModalWrapper
-            {...props}
-            title="UserProfile"
-            width={400}
-            showOk={false}
-        >
-            <p>What is your target demographic?</p>
-            <input />
-            <button onClick={() => updateDemographic()}>Update</button>
-        </ModalWrapper>
-    )
+class TargetDemographicsForm extends React.Component {
+    render() {
+        return (
+            <div className="modal">
+                <div className="modal-background"></div>
+                <div className="modal-card">
+                    <header className="modal-card-head">
+                        <p className="modal-card-title">Modal title</p>
+                        <button className="delete" aria-label="close"></button>
+                    </header>
+                    <section className="modal-card-body">
+                    </section>
+                    <footer className="modal-card-foot">
+                        <button className="button is-success">Save changes</button>
+                        <button className="button">Cancel</button>
+                    </footer>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default TargetDemographicsForm;

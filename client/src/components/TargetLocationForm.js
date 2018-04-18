@@ -2,9 +2,9 @@ import React from 'react';
 import ModalWrapper from './ModalWrapper';
 
     const TargetLocationForm = props => {
-        const signIn = provider => {
+        const updateLocation = location => {
             props.hideModal();
-            props.signIn(provider);
+            props.updateLocation(location);
         };
 
         return (
@@ -16,6 +16,7 @@ import ModalWrapper from './ModalWrapper';
             >
                 <p>Where is your target location?</p>
                 <input />
+                <button onClick={() => updateLocation()}>Update</button>
             </ModalWrapper>
         )
     }

@@ -2,9 +2,9 @@ import React from 'react';
 import ModalWrapper from './ModalWrapper';
 
 const TargetIndustryForm = props => {
-    const target = industry => {
+    const targetIndustry = industry => {
         props.hideModal();
-        props.signIn(industry);
+        props.targetIndustry(industry);
     };
 
     return (
@@ -15,6 +15,7 @@ const TargetIndustryForm = props => {
             showOk={false}
         >
             <p>Which industry would you like to research?</p>
+            <button onClick={() => targetIndustry()}>Update</button>
             <input />
         </ModalWrapper>
     )
