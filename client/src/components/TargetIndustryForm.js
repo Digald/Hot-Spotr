@@ -2,9 +2,9 @@ import React from 'react';
 import ModalWrapper from './ModalWrapper';
 
 const TargetIndustryForm = props => {
-    const signIn = provider => {
+    const target = industry => {
         props.hideModal();
-        props.signIn(provider);
+        props.signIn(industry);
     };
 
     return (
