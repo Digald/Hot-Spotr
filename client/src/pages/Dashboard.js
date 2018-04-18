@@ -6,10 +6,10 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dashboard-cont">
-        <Sidebar />
-        <div className="user-view">
-          <Googlemaps />
-        </div>
+          <Sidebar />
+          <div className="user-view">
+            <Googlemaps />
+          </div>
       </div>
     );
   }
