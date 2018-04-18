@@ -49,12 +49,12 @@ body {
 
 .main-title {
   font-size: 6vw;
-  color: white;
+  color: #DAD6C7;
 }
 
 .sub-title {
   font-size: 1.5vw;
-  color: white;
+  color: #DAD6C7;
 }
 
 @media screen and (max-width: 1024px) {
@@ -209,7 +209,7 @@ body {
 
 .fa-github-alt {
   position: relative;
-  color: #FFFF;
+  color: #DAD6C7;
   font-size: 18px;
   margin-right: 4px;
 }
@@ -224,5 +224,5 @@ body {
   position: relative;
   top: 64px;
   text-align: center;
-  color: #FFFF;
+  color: #DAD6C7;
 }

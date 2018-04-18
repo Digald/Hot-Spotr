@@ -3,7 +3,7 @@ import { Container, Columns, Column } from "../components/grid";
 // import IphoneMockUp from "../components/IphoneMockUp.js";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
-import SocialMedia from '../components/SocialMedia.js';
+import SocialMediaLanding from '../components/SocialMediaLanding.js';
 import Footer from '../components/Footer.js';
 
 class Landing extends React.Component {
@@ -11,7 +11,7 @@ class Landing extends React.Component {
     return (
       <div className="landing-cont">
         <Container size="is-fluid">
-          <SocialMedia socialClass="landing-social" />
+          <SocialMediaLanding socialClass="landing-social" />
           <div className="wrapper">
             <Columns>
               <Column unique="text-section">

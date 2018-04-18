@@ -1,10 +1,10 @@
 import React from 'react';
-import facebook from '../styles/images/facebook-brown.svg';
-import instagram from '../styles/images/instagram-brown.svg';
-import google from '../styles/images/google-brown.svg';
-import twitter from '../styles/images/twitter-brown.svg';
+import facebook from '../styles/images/facebook-white.svg';
+import instagram from '../styles/images/instagram-white.svg';
+import google from '../styles/images/google-white.svg';
+import twitter from '../styles/images/twitter-white.svg';
 
-const SocialMedia = props => (
+const SocialMediaSidebar = props => (
     <div className={props.socialClass}>
         <a href='https://www.facebook.com' target='_blank' rel="noopener noreferrer">
             <img src={facebook} className='social-icon' alt='facebook' />
@@ -21,4 +21,4 @@ const SocialMedia = props => (
     </div>
 )
 
-export default SocialMedia;
+export default SocialMediaSidebar;

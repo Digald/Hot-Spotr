@@ -1,6 +1,6 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
-import SocialMedia from "./SocialMedia.js";
+import SocialMediaSidebar from "./SocialMediaSidebar.js";
 import TargetIndustryForm from "./TargetIndustryForm.js";
 
 const Sidebar = props => (
@@ -38,7 +38,7 @@ const Sidebar = props => (
           <i className="fas fa-arrow-circle-left" />
         </span> LOGOUT
       </a>
-      <SocialMedia socialClass="sidebar-social" />
+      <SocialMediaSidebar socialClass="sidebar-social" />
     </div>
   </div>
 );
