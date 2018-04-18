@@ -42,7 +42,7 @@ class Landing extends React.Component {
                     unique="mobile-text"
                   >
                     <Logo unique="inline-logo" />
-                    <h1 className="main-title">Hot Spot</h1>
+                    <h1 className="main-title">Hot Spotr</h1>
                     <p className="sub-title">Identify the low hanging fruit.</p>
                     <Columns>
                       <Column>

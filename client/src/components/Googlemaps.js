@@ -20,12 +20,13 @@ class Googlemaps extends React.Component {
           bootstrapURLKeys={{ key: "AIzaSyBj2iAiGV1zywVVzlZSaIM1y3VPpCUqRF0" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-        />
+        >
         <AnyReactComponent
           lat={30.2672}
           lng={-97.7431}
           text={"Austin Texas"}
         />
+        </GoogleMapReact>
       </div>
     );
   }
