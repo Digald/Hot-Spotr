@@ -13,13 +13,13 @@ class Landing extends React.Component {
 
   toggleSignUp = () => {
     const currentState = this.state.activeModal;
-    this.setState({ activeModal: !currentState, clickedBtn: "signup" });
+    this.setState({ activeModal: !currentState, clickedBtn: "Sign Up" });
     console.log(this.state.clickedBtn);
   };
 
   toggleLogIn = () => {
     const currentState = this.state.activeModal;
-    this.setState({ activeModal: !currentState, clickedBtn: "login" });
+    this.setState({ activeModal: !currentState, clickedBtn: "Login" });
   };
 
   render() {
@@ -47,7 +47,7 @@ class Landing extends React.Component {
                           Sign Up
                         </GenericBtn>
                         <GenericBtn toggleModal={this.toggleLogIn}>
-                          Sign In
+                          Login
                         </GenericBtn>
                       </Column>
                     </Columns>

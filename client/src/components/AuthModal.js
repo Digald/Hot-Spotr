@@ -21,7 +21,7 @@ class AuthModal extends Component {
     if (!this.state.email || !this.state.password) {
       alert("Fill out your first and last name please!");
     }
-    if (this.props.clickedBtn === "signup") {
+    if (this.props.clickedBtn === "Sign Up") {
       API.userSignUp({
         email: this.state.email,
         password: this.state.password
@@ -33,7 +33,7 @@ class AuthModal extends Component {
         .catch(err => {
           console.log(err);
         });
-    } else if (this.props.clickedBtn === "login") {
+    } else if (this.props.clickedBtn === "Login") {
       API.userLogIn({
         email: this.state.email,
         password: this.state.password
@@ -53,7 +53,7 @@ class AuthModal extends Component {
       <div className={`modal ${this.props.activeModal ? "is-active" : null}`}>
         <div className="modal-background" />
         <div className="modal-content">
-          <h1>{this.props.authtitle}</h1>
+          <h1>{this.props.clickedBtn}:</h1>
           <form onSubmit={this.handleSubmit}>
             <label>
               Email:
@@ -75,7 +75,7 @@ class AuthModal extends Component {
             </label>
             <input
               type="submit"
-              value="Sign Up"
+              value={this.props.clickedBtn}
               onClick={this.handleFormSubmit}
             />
           </form>

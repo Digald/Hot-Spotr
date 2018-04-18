@@ -16,7 +16,7 @@ class Dashboard extends React.Component {
       <div className="dashboard-cont">
         <Sidebar />
         <div className="user-view">
-          <h1 className="section-header">Profile Completeness</h1>
+          <h1 className="section-header">Profile Progress</h1>
           <MuiThemeProvider>
             <ProgressBar />
           </MuiThemeProvider>
