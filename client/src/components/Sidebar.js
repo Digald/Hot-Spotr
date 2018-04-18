@@ -1,6 +1,7 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
 import SocialMedia from "./SocialMedia.js";
+import TargetIndustryForm from "./TargetIndustryForm.js";
 
 const Sidebar = props => (
   <div className="sidebar">
@@ -12,7 +13,7 @@ const Sidebar = props => (
       </div>
     </div>
     <div className="menu-space">
-      <a className="sidebar-link" onClick={() => this.props.currentModal(this.props.index)}>
+      <a className="sidebar-link" onClick={() => TargetIndustryForm()}>
         <span className="icon has-text-success">
           <i className="fas fa-building" />
         </span> TARGET INDUSTRY
