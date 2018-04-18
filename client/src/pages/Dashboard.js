@@ -11,6 +11,7 @@ import API from "../utils/API";
 class Dashboard extends React.Component {
   state = {
     open: false,
+    completed: 0,
     whichForm: "",
     industry: ""
   };
@@ -34,6 +35,9 @@ class Dashboard extends React.Component {
       console.log(this.state.industry);
       // API call goes here using this.state.<search_result>.
       // Response gets added to state and then can be rendered in the html
+      function initPlaces() {
+        
+      }
     }
   };
 
@@ -58,7 +62,7 @@ class Dashboard extends React.Component {
         <div className="user-view">
           <h1 className="section-header">Profile Progress</h1>
           <MuiThemeProvider>
-            <ProgressBar />
+            <ProgressBar completed={this.state.completed} />
           </MuiThemeProvider>
           <Googlemaps />
           <MuiThemeProvider>
