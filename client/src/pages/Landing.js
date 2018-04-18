@@ -13,9 +13,9 @@ class Landing extends React.Component {
         <Container size="is-fluid">
           <SocialMedia socialClass="landing-social" />
           <div className="wrapper">
-            <Columns style="is-tablet is-centered">
+            <Columns>
               <Column unique="text-section">
-                <Columns style="is-mobile">
+                <Columns>
                   <Column unique="blank-col" />
                   <Column size="is-narrow" unique="logo-col">
                     <Logo />

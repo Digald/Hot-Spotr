@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store, { history } from '../store';
+import store from '../store';
 import App from './App';
 import Landing from '../pages/Landing';
 import Dashboard from '../pages/Dashboard';
