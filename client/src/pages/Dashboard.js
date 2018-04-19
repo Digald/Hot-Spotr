@@ -7,9 +7,9 @@ class Dashboard extends React.Component {
     return (
       <div className="dashboard-cont">
           <Sidebar />
-          <div className="user-view">
-            <Googlemaps />
-          </div>
+            <div className="user-view">
+              <Googlemaps />
+            </div>
       </div>
     );
   }
