@@ -1,12 +1,26 @@
 import React from "react";
-import { Container, Columns, Column } from "../components/grid";
+import { Container, Columns, Column } from "../components/Grid";
 // import IphoneMockUp from "../components/IphoneMockUp.js";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
 import SocialMedia from '../components/SocialMedia.js';
 import Footer from '../components/Footer.js';
+import Census from "../components/Census_Test/Census";
 
 class Landing extends React.Component {
+
+  componentDidMount(){Census.getCensusEarnings2224().then(
+    res=>{
+      console.log(res);
+    }
+  ).catch(
+    err=>{
+      console.log(err);
+    }
+  )};
+
+
+
   render() {
     return (
       <div className="landing-cont">

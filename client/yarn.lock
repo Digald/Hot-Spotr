@@ -104,6 +104,18 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-mocks@~1.4.7:
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.4.14.tgz#ea12ec70a5227697e79575523abbec0e0f9168a7"
+
+angular-route@~1.4.7:
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/angular-route/-/angular-route-1.4.14.tgz#2e5dbfe1239423c678165c39bb38601ad66a0794"
+
+angular@~1.4.7:
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.4.14.tgz#9d0feaf60ce6e52ce50f49ee328656d1e1875c37"
+
 ansi-align@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-2.0.0.tgz#c36aeccba563b89ceb556f3690f0b1d9e3547f7f"
@@ -356,6 +368,13 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -1369,6 +1388,10 @@ caniuse-lite@^1.0.30000697, caniuse-lite@^1.0.30000792:
   version "1.0.30000821"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000821.tgz#0f3223f1e048ed96451c56ca6cf197058c42cb93"
 
+capitalize@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/capitalize/-/capitalize-0.5.0.tgz#efa007343183ef12aff360cc84925064b5cc778b"
+
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
@@ -1496,6 +1519,10 @@ cli-cursor@^2.1.0:
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
+
+click-off@~0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/click-off/-/click-off-0.2.1.tgz#9c7a47a9ca8cf73d066caa1b2e405594b42e34a7"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -2226,6 +2253,12 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
   version "1.3.41"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.41.tgz#7e33643e00cd85edfd17e04194f6d00e73737235"
 
+element-class@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/element-class/-/element-class-0.1.1.tgz#890f57bc0e1365d3794316518db121c859d15e4f"
+  dependencies:
+    inherits "~1.0.0"
+
 elliptic@^6.0.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.0.tgz#cac9af8762c85836187003c8dfe193e5e2eae5df"
@@ -2366,6 +2399,10 @@ es6-weak-map@^2.0.1:
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+
+escape-stack@~0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/escape-stack/-/escape-stack-0.1.2.tgz#da4c7e60ff9fecefa40172fa02acc6d6ac0ec267"
 
 escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -2908,6 +2945,12 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+follow-redirects@^1.3.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.4.1.tgz#d8120f4518190f55aac65bb6fc7b85fcd666d6aa"
+  dependencies:
+    debug "^3.1.0"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3170,6 +3213,21 @@ got@^6.7.1:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+grid@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/grid/-/grid-3.3.7.tgz#491a9f03acbc1e76c706588f70264b0fed09db70"
+  dependencies:
+    angular "~1.4.7"
+    angular-mocks "~1.4.7"
+    angular-route "~1.4.7"
+    capitalize "^0.5.0"
+    click-off "~0.2.1"
+    element-class "^0.1.1"
+    escape-stack "~0.1.2"
+    inner-text-shim "~1.0.1"
+    key "^0.1.11"
+    time-now "~0.2.1"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -3543,9 +3601,17 @@ inherits@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
 
+inherits@~1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-1.0.2.tgz#ca4309dadee6b54cc0b8d247e8d7c7a0975bdc9b"
+
 ini@^1.3.4, ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+
+inner-text-shim@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/inner-text-shim/-/inner-text-shim-1.0.1.tgz#33c5fef1ef5822fbddd074f6cb8f5bfecf9befc3"
 
 inquirer@3.3.0, inquirer@^3.0.6:
   version "3.3.0"
@@ -4314,6 +4380,10 @@ jstransform@^11.0.3:
 jsx-ast-utils@^1.4.0, jsx-ast-utils@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.4.1.tgz#3867213e8dd79bf1e8f2300c0cfc1efb182c0df1"
+
+key@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/key/-/key-0.1.11.tgz#66024f2e2daaa4fabe049b26d74c47220551cfd9"
 
 keycode@^2.1.2:
   version "2.2.0"
@@ -6898,6 +6968,10 @@ through@^2.3.6, through@~2.3.4:
 thunky@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.0.2.tgz#a862e018e3fb1ea2ec3fce5d55605cf57f247371"
+
+time-now@~0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/time-now/-/time-now-0.2.1.tgz#acc8ad3202f259a9f2791a3473957d51544ac384"
 
 time-stamp@^2.0.0:
   version "2.0.0"
