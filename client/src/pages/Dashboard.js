@@ -44,20 +44,19 @@ class Dashboard extends React.Component {
   handleSubmit = () => {
     if (this.state.whichForm === "industry") {
       console.log(this.state.industry);
-      // API call goes here using this.state.<search_result>.
-      // Response gets added to state and then can be rendered in the html
       API.sendTest({ keyword: this.state.industry })
         .then(res => {
           console.log(res.data.results);
-          const placeResults = res.data.results;
-          this.setState({ placesResults: placeResults });
+          const resultsToState = res.data.results;
+          this.setState({ placesResults: resultsToState });
         })
         .then(err => console.log(err));
     }
   };
 
-  componentDidMount =() => {
-    console.log(this.state.placeResults);
+  componentDidUpdate() {
+    // console.logs state at every change
+    console.log(this.state);
   }
 
   formSelection = () => {
