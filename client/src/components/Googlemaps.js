@@ -15,17 +15,19 @@ class Googlemaps extends React.Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div className='map' style={{ height: "50vh", width: "100%" }}>
+      <div className="map" style={{ height: "50vh", width: "100%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyBj2iAiGV1zywVVzlZSaIM1y3VPpCUqRF0" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
+          heatmapLibrary={false}
+          heatmap={{ positions: [], options: {} }}
         >
-        <AnyReactComponent
-          lat={30.2672}
-          lng={-97.7431}
-          text={"Austin Texas"}
-        />
+          <AnyReactComponent
+            lat={30.2672}
+            lng={-97.7431}
+            text={"Austin Texas"}
+          />
         </GoogleMapReact>
       </div>
     );

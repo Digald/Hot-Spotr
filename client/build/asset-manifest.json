@@ -1,12 +1,16 @@
 {
-  "main.css": "static/css/main.fe34a654.css",
-  "main.css.map": "static/css/main.fe34a654.css.map",
-  "main.js": "static/js/main.7b65db10.js",
-  "main.js.map": "static/js/main.7b65db10.js.map",
+  "main.css": "static/css/main.735fbf5a.css",
+  "main.css.map": "static/css/main.735fbf5a.css.map",
+  "main.js": "static/js/main.f843de06.js",
+  "main.js.map": "static/js/main.f843de06.js.map",
   "static\\media\\dashboard-background.jpg": "static/media/dashboard-background.e4fa9dff.jpg",
-  "static\\media\\facebook.svg": "static/media/facebook.b546a1fa.svg",
-  "static\\media\\google.svg": "static/media/google.60e4572b.svg",
-  "static\\media\\instagram.svg": "static/media/instagram.3ca78128.svg",
+  "static\\media\\facebook-brown.svg": "static/media/facebook-brown.dec39607.svg",
+  "static\\media\\facebook-white.svg": "static/media/facebook-white.08e1de8b.svg",
+  "static\\media\\google-brown.svg": "static/media/google-brown.416c3a48.svg",
+  "static\\media\\google-white.svg": "static/media/google-white.08a7d102.svg",
+  "static\\media\\instagram-brown.svg": "static/media/instagram-brown.2ffe27ac.svg",
+  "static\\media\\instagram-white.svg": "static/media/instagram-white.193b9db9.svg",
   "static\\media\\landing-background.jpg": "static/media/landing-background.98bc53d2.jpg",
-  "static\\media\\twitter.svg": "static/media/twitter.9e86c6d5.svg"
+  "static\\media\\twitter-brown.svg": "static/media/twitter-brown.d6773faa.svg",
+  "static\\media\\twitter-white.svg": "static/media/twitter-white.0ed8700f.svg"
 }
