@@ -4,8 +4,8 @@ import { Container, Columns, Column } from "../components/Grid";
 import Logo from "../components/Logo.js";
 import GenericBtn from "../components/GenericBtn.js";
 import AuthModal from "../components/AuthModal.js";
-import SocialMedia from "../components/SocialMedia.js";
 import Footer from "../components/Footer.js";
+import SocialMediaLanding from '../components/SocialMediaLanding.js';
 
 class Landing extends React.Component {
   state = {
@@ -28,7 +28,7 @@ class Landing extends React.Component {
     return (
       <div className="landing-cont">
         <Container size="is-fluid">
-          <SocialMedia socialClass="landing-social" />
+          <SocialMediaLanding socialClass="landing-social" />
           <div className="wrapper">
             <Columns>
               <Column unique="text-section">

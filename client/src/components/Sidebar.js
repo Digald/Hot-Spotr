@@ -1,6 +1,7 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
-import SocialMedia from "./SocialMedia.js";
+import SocialMediaSidebar from "./SocialMediaSidebar.js";
+import TargetIndustryForm from "./TargetIndustryForm.js";
 
 class Sidebar extends React.Component {
   render() {
