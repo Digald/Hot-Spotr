@@ -11,6 +11,7 @@ import API from "../utils/API";
 class Dashboard extends React.Component {
   state = {
     open: false,
+    placesResults: [],
     completed: 0,
     whichForm: "",
     industry: ""
@@ -19,6 +20,10 @@ class Dashboard extends React.Component {
 
   handleToggleIndustry = () => {
     this.setState({ open: !this.state.open, whichForm: "industry" });
+  };
+
+  handleToggleLocation = () => {
+    this.setState({ open: !this.state.open, whichForm: "location" });
   };
 
   handleInputChange = event => {
@@ -35,11 +40,19 @@ class Dashboard extends React.Component {
       console.log(this.state.industry);
       // API call goes here using this.state.<search_result>.
       // Response gets added to state and then can be rendered in the html
-      function initPlaces() {
-        
-      }
+      API.sendTest({ keyword: this.state.industry })
+        .then(res => {
+          console.log(res.data.results);
+          const placeResults = res.data.results;
+          this.setState({ placesResults: placeResults });
+        })
+        .then(err => console.log(err));
     }
   };
+
+  componentDidMount =() => {
+    console.log(this.state.placeResults);
+  }
 
   formSelection = () => {
     switch (this.state.whichForm) {
@@ -58,7 +71,10 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dashboard-cont">
-        <Sidebar handleToggleIndustry={this.handleToggleIndustry} />
+        <Sidebar
+          handleToggleIndustry={this.handleToggleIndustry}
+          handleToggleLocation={this.handleToggleLocation}
+        />
         <div className="user-view">
           <h1 className="section-header">Profile Progress</h1>
           <MuiThemeProvider>

@@ -24,7 +24,7 @@ class Sidebar extends React.Component {
           </a>
           <a
             className="sidebar-link"
-            onClick={() => this.props.currentModal(this.props.index)}
+            onClick={() => this.props.handleToggleLocation()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-map-marker-alt" />
