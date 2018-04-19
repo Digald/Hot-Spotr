@@ -53,10 +53,9 @@ class AuthModal extends Component {
       <div className={`modal ${this.props.activeModal ? "is-active" : null}`}>
         <div className="modal-background" />
         <div className="modal-content">
-          <h1>{this.props.clickedBtn}:</h1>
           <form onSubmit={this.handleSubmit}>
             <label>
-              Email:
+              <p>Email</p>
               <input
                 type="text"
                 name="email"
@@ -66,7 +65,7 @@ class AuthModal extends Component {
             </label>
             <br/>
             <label>
-              Password:
+              <p>Password</p>
               <input
                 type="password"
                 name="password"
@@ -76,6 +75,7 @@ class AuthModal extends Component {
             </label>
             <br/>
             <input
+              className="submit-button"
               type="submit"
               value={this.props.clickedBtn}
               onClick={this.handleFormSubmit}

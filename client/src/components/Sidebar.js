@@ -1,7 +1,6 @@
 import React from "react";
 import Logo2 from "../components/Logo2.js";
 import SocialMediaSidebar from "./SocialMediaSidebar.js";
-import TargetIndustryForm from "./TargetIndustryForm.js";
 
 class Sidebar extends React.Component {
   render() {
@@ -34,7 +33,7 @@ class Sidebar extends React.Component {
           </a>
           <a
             className="sidebar-link"
-            onClick={() => this.props.currentModal(this.props.index)}
+            onClick={() => this.props.handleToggleDemographic()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-users" />
@@ -43,7 +42,7 @@ class Sidebar extends React.Component {
           </a>
           <a
             className="sidebar-link"
-            onClick={() => this.props.currentModal(this.props.index)}
+            onClick={() => this.props.handleToggleHeatmap()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-map" />

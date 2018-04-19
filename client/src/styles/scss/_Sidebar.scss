@@ -13,7 +13,7 @@
     width: 100%;
     display: table;
     text-align: center;
-    color: white;
+    color: #DAD6C7;
     height: 15vh;
     border-bottom: 1px solid black;
 }
@@ -26,7 +26,7 @@
 .menu-space {
     padding: 20px 0;
     height: 100%;
-    color: white;
+    color: #DAD6C7;
 }
 
 .sidebar-link {
@@ -46,12 +46,27 @@
     transform: translateY(10%);
 }
 
+.field {
+    height: 100%;
+    padding: 10px;
+    background-color: #DAD6C7;
+}
+
+.label {
+    color: #573525;
+}
+
+.control {
+    padding-bottom: 20px;
+}
+
 .sidebar-social {
     text-align: center;
     position: relative;
     top: 200px;
 }
 
+// Start Icon style
 .fa-users,
 .fa-building,
 .fa-map,
@@ -63,3 +78,4 @@
     font-size: 25px;
     margin-right: 14px;
 }
+// End Icon style

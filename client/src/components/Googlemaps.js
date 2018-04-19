@@ -1,3 +1,4 @@
+
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
@@ -20,8 +21,6 @@ class Googlemaps extends React.Component {
           bootstrapURLKeys={{ key: "AIzaSyBj2iAiGV1zywVVzlZSaIM1y3VPpCUqRF0" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-          heatmapLibrary={false}
-          heatmap={{ positions: [], options: {} }}
         >
           <AnyReactComponent
             lat={30.2672}
