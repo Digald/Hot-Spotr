@@ -227,7 +227,7 @@ body {
 
 .button {
   background-color: #E17342;
-  color: #FFFFFF;
+  color: #DAD6C7;
   margin-right: 10px;
 }
 
@@ -235,5 +235,23 @@ body {
   position: relative;
   top: 64px;
   text-align: center;
+  color: #DAD6C7;
+}
+
+.modal-content {
+  height: 200px;
+  background-color: #DAD6C7;
+  color: #573525;
+  border-color: #E17342;
+  border-width: 2px;
+  padding: 12px;
+}
+
+.modal-close {
+  background-color: #E17342;
+}
+
+.submit-button {
+  background-color: #E17342;
   color: #DAD6C7;
 }

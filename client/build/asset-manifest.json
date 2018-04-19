@@ -1,8 +1,12 @@
 {
-  "main.css": "static/css/main.14d6033d.css",
-  "main.css.map": "static/css/main.14d6033d.css.map",
-  "main.js": "static/js/main.49a5db56.js",
-  "main.js.map": "static/js/main.49a5db56.js.map",
-  "static\\media\\background.jpg": "static/media/background.60cb9da4.jpg",
-  "static\\media\\moonlogo.png": "static/media/moonlogo.18775024.png"
+  "main.css": "static/css/main.fe34a654.css",
+  "main.css.map": "static/css/main.fe34a654.css.map",
+  "main.js": "static/js/main.7b65db10.js",
+  "main.js.map": "static/js/main.7b65db10.js.map",
+  "static\\media\\dashboard-background.jpg": "static/media/dashboard-background.e4fa9dff.jpg",
+  "static\\media\\facebook.svg": "static/media/facebook.b546a1fa.svg",
+  "static\\media\\google.svg": "static/media/google.60e4572b.svg",
+  "static\\media\\instagram.svg": "static/media/instagram.3ca78128.svg",
+  "static\\media\\landing-background.jpg": "static/media/landing-background.98bc53d2.jpg",
+  "static\\media\\twitter.svg": "static/media/twitter.9e86c6d5.svg"
 }
