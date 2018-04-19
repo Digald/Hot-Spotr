@@ -56,7 +56,7 @@ class Sidebar extends React.Component {
             </span>{" "}
             LOGOUT
           </a>
-          <SocialMedia socialClass="sidebar-social" />
+          <SocialMediaSidebar socialClass="sidebar-social" />
         </div>
       </div>
     );
