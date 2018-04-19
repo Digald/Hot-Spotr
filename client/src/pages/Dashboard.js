@@ -76,10 +76,11 @@ class Dashboard extends React.Component {
           handleToggleLocation={this.handleToggleLocation}
         />
         <div className="user-view">
-          <h1 className="section-header">Profile Progress</h1>
-          <MuiThemeProvider>
-            <ProgressBar completed={this.state.completed} />
-          </MuiThemeProvider>
+          <h1 className="section-header">Profile Progress
+            <MuiThemeProvider>
+              <ProgressBar completed={this.state.completed} />
+            </MuiThemeProvider>
+          </h1>
           <Googlemaps />
           <MuiThemeProvider>
             <Drawer

@@ -103,6 +103,7 @@ body {
 .map {
   position: relative;
   top: 15vh;
+  margin-bottom: 160px;
 }
 
 .dashboard-cont:before {
@@ -127,6 +128,15 @@ body {
 
 .user-view {
   margin-left: 250px;
+  min-height: 900px;
+  max-height: 1200px;
+}
+
+.section-header {
+  position: fixed;
+  color: #DAD6C7;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .sidebar {
@@ -225,6 +235,16 @@ body {
   margin-right: 4px;
 }
 
+@media screen and (max-width: 1024px) {
+  .logo-image {
+    width: 9vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .logo-image {
+    width: 13vw;
+  }
+}
 .button {
   background-color: #E17342;
   color: #DAD6C7;
@@ -254,4 +274,9 @@ body {
 .submit-button {
   background-color: #E17342;
   color: #DAD6C7;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 10px;
 }
