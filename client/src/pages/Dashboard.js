@@ -6,6 +6,8 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Drawer from "material-ui/Drawer";
 import MenuItem from "material-ui/MenuItem";
 import IndustryForm from "../components/IndustryForm";
+import LocationForm from "../components/LocationForm";
+import DemographicForm from "../components/DemographicForm";
 import API from "../utils/API";
 
 class Dashboard extends React.Component {
@@ -24,6 +26,10 @@ class Dashboard extends React.Component {
 
   handleToggleLocation = () => {
     this.setState({ open: !this.state.open, whichForm: "location" });
+  };
+
+  handleToggleDemographic = () => {
+    this.setState({ open: !this.state.open, whichForm: "demographic" });
   };
 
   handleInputChange = event => {
@@ -63,6 +69,20 @@ class Dashboard extends React.Component {
             handleSubmit={this.handleSubmit}
           />
         );
+      case "location":
+        return (
+          <LocationForm
+            handleInputChange={this.handleInputChange}
+            handleSubmit={this.handleSubmit}
+          />
+        );
+      case "demographic":
+        return (
+          <DemographicForm
+            handleInputChange={this.handleInputChange}
+            handleSubmit={this.handleSubmit}
+          />
+        );
       default:
         return null;
     }
@@ -74,6 +94,7 @@ class Dashboard extends React.Component {
         <Sidebar
           handleToggleIndustry={this.handleToggleIndustry}
           handleToggleLocation={this.handleToggleLocation}
+          handleToggleDemographic={this.handleToggleDemographic}
         />
         <div className="user-view">
           <h1 className="section-header">Profile Progress

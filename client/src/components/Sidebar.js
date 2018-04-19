@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
           </a>
           <a
             className="sidebar-link"
-            onClick={() => this.props.currentModal(this.props.index)}
+            onClick={() => this.props.handleToggleDemographic()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-users" />
@@ -42,7 +42,7 @@ class Sidebar extends React.Component {
           </a>
           <a
             className="sidebar-link"
-            onClick={() => this.props.currentModal(this.props.index)}
+            onClick={() => this.props.handleToggleHeatmap()}
           >
             <span className="icon has-text-success">
               <i className="fas fa-map" />
