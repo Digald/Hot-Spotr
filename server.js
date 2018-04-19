@@ -1,5 +1,4 @@
 require("dotenv").config();
-const keys = require("./keys.js");
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3001;
