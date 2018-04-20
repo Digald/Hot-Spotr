@@ -56,7 +56,8 @@ class Dashboard extends React.Component {
 
   componentDidUpdate() {
     // console.logs state at every change
-    console.log(this.state);
+    console.log(this.state.placesResults);
+
   }
 
   formSelection = () => {
@@ -101,7 +102,7 @@ class Dashboard extends React.Component {
               <ProgressBar completed={this.state.completed} />
             </MuiThemeProvider>
           </h1>
-          <Googlemaps />
+          <Googlemaps placesResults={this.state.placesResults}/>
           <MuiThemeProvider>
             <Drawer
               docked={false}
